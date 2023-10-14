@@ -1,0 +1,198 @@
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+body {
+    margin: 0;
+    line-height: 135%;
+    background-color: rgb(92, 92, 186);
+    color: whitesmoke;
+}
+
+/*.container {
+    max-width: 30em;
+    margin: 0 auto;
+    padding: 0.7em 1em;
+}
+*/
+
+
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  
+}
+
+/* Control the left side */
+.left {
+  
+  background-color: black;
+  
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(92, 92, 186);
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+/*section {
+    margin: 0 auto;
+    background-color: plum;
+    border-radius: var(--border-rad-lg);
+    padding: .25em 1em;
+    box-shadow: 0px 1px 18px 3px var(--dark);
+    max-width: 500px;
+}
+.setup-inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em .5em;
+    min-height: 234px;
+}
+
+
+.setup-input-container {
+    min-height: 74px;
+}*/
+.song-title{
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    background-color: hsl(215, 75%, 48%);
+    color: white;
+    border: none;
+    padding: 0.5em 0.8em;
+    border-radius: 19px;
+}
+.output-centered {
+    flex-direction: column;
+    margin: 1em auto;
+    color: black;
+    padding: 1em;
+    display: inline-flexbox;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+     
+}
+
+
+#upload-form {
+    margin: 2em 0;
+}
+
+input {
+    font-size: 16px;
+}
+
+
+br {
+    line-height: 200%;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: hsl(215, 100%, 65%);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.disclaimer {
+    font-size: 0.7em;
+    line-height: 130%;
+    margin: 0.35em 0;
+}
+
+footer {
+    margin-top: 10px;
+    font-size: 0.7em;
+    opacity: 70%;
+}
+
+input[type=text], textarea {
+    font-family: -apple-system, sans-serif;
+    line-height: 120%;
+    background-color: whitesmoke;
+    color: hsla(0, 0%, 90%, 40%);
+    border: 1px solid hsla(0, 0%, 90%, 40%);
+    padding: 0.2em 0.5em;
+    border-radius: 1em;
+}
+
+
+
+button {
+    background-color: rgb(92, 92, 186);
+    color: white;
+    border: none;
+    padding: 0.5em 0.8em;
+    border-radius: 19px;
+    font-size: 1em;
+}
+
+label.button {
+    display: inline-block;
+    background-color: hsl(215, 75%, 48%);
+    color: white;
+    border: none;
+    padding: 0.5em 0.8em;
+    border-radius: 19px;
+    font-size: 1em;
+}
+
+select {
+    font-family: -apple-system, sans-serif;
+    line-height: 120%;
+    background-color:whitesmoke;
+    color:hsla(0, 0%, 90%, 40%);
+    border: 1px solid hsla(0, 0%, 90%, 40%);
+    padding: 0.2em 0.5em;
+    border-radius: 1em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 7'><path fill='%23666666' d='M5 6.8s-.1 0 0 0c-.1 0-.1 0 0 0L1 2.8 2.2 1.6 5 4.4 7.8 1.6 9 2.8z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.5em center;
+    background-size: 14px;
+    padding-right: 2em;
+    margin-top: 0.4em;
+    font-size: 1em;
+}
+
+select:focus {
+    outline: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.segment {
+    margin: 1em 0;
+}
+
+.heading{
+    text-align: center;
+    border-style: dotted;
+    border-color: aliceblue;
+    font-family: monospace;
+    font-size: 20px;
+}
