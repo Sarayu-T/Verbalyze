@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
     fileInput.addEventListener('change', () => {
         setTranscribingMessage('Transcribing...')
 
-        const apiKey = "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"
+        const apiKey = ""
         const file = fileInput.files[0]
         const language = document.querySelector('#language').value
         const response_format = document.querySelector('#response_format').value
