@@ -82,7 +82,7 @@ const setTranscribedSegments = (segments) => {
 
 
 const url2="https://api.openai.com/v1/completions"
-const api2="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"
+const api2=""
 async function fetchSongTitle(song_lyrics) {
     try {
       const response = await fetch(url2, {
